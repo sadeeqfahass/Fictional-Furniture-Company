@@ -1,0 +1,536 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #9c9c9c;
+}
+
+.nav-links li:not(:last-child) {
+    margin-right: 35px;
+}
+
+.btn-lang {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.btn-lang button {
+    background: #000;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: transform .5s;
+}
+
+.btn-lang button:hover {
+    transform: scale(1.1);
+}
+
+.nav .menu {
+    display: none;
+    font-size: 30px;
+}
+
+.hero {
+    margin-top: 50px;
+    position: relative;
+}
+
+.hero_text {
+    text-align: center;
+}
+
+.hero_text--sub {
+    color: #777;
+}
+
+.hero_badge {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: rgba(255, 255, 255, .6);
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #856639;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 7%;
+    left: 7%;
+}
+
+.hero_image {
+    width: 100%;
+    height: 550px;
+    background: #856639;
+    margin-bottom: 0;
+}
+
+.hero_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner {
+    width: 100%;
+    background: #131313;
+    color: #fff;
+    padding: 20px 30px;
+    margin-top: -16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-items: flex-end;
+}
+
+.second .title,
+.third .title {
+    color: #777;
+}
+
+.featured {
+    padding: 40px 30px 70px;
+    text-align: center;
+}
+
+.featured_text p {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.featured_text h2 {
+    margin-top: 0;
+}
+
+.featured_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.featured_cards .card {
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    box-shadow: 5px 5px 5px #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .5s;
+}
+
+.featured_cards .card:hover {
+    transform: translateY(-10px);
+}
+
+.featured_cards .card i {
+    font-size: 30px;
+}
+
+.featured_cards .card_title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.featured_cards .card_desc {
+    width: 80%;
+    color: #777;
+}
+
+.about {
+    margin: 20px 0;
+    display: flex;
+    /* align-items: center; */
+}
+
+.about .left {
+    width: 40%;
+}
+
+.about .left img {
+    width: 100%;
+}
+
+.about .right {
+    background: #d7d7d7;
+    width: 60%;
+    padding: 20px 50px 20px 30px;
+}
+
+.about .right .title_small {
+    text-transform: uppercase;
+    color: #777;
+}
+
+.about .right .title_main {
+    width: 70%;
+}
+
+.about .right .title_main span {
+    padding: 1.5px;
+    background: #cfb393;
+}
+
+.about .right .desc {
+    color: #777;
+    width: 70%;
+}
+
+.about .right .desc span {
+    background: #cfb393;
+}
+
+.about .right button {
+    border: none;
+    padding: 8px 25px;
+    background: #000;
+    color: #fff;
+    transition: transform .5s;
+}
+
+.about .right button:hover {
+    transform: scale(1.1);
+}
+
+.explore {
+    padding: 20px 40px;
+    position: relative;
+}
+
+.arrows div {
+    background: #f0f0f0;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.arrows .left {
+    left: 1%;
+    top: 50%;
+}
+
+.arrows .right {
+    right: 1%;
+    top: 50%;
+}
+
+.explore .title_small {
+    color: #777;
+    text-transform: uppercase;
+}
+
+.explore .title_main {
+    margin: 0 0 30px;
+}
+
+.explore hr {
+    border: solid 1px #000;
+    margin-bottom: 40px;
+}
+
+.explore .image_cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.explore .image_cards hr {
+    display: none;
+}
+
+.explore .image_cards img {
+    width: 100%;
+    height: 60%;
+}
+
+.explore .image_cards .card {
+    width: 25%;
+}
+
+.image_cards .card .card_title {
+    font-weight: 500;
+}
+
+.image_cards .card .card_desc {
+    width: 90%;
+    color: #777;
+}
+
+.count {
+    background: url(Images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.count .text {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(19, 19, 19, 0.95);
+    width: 100%;
+    height: 100%;
+}
+
+.count .text h2 {
+    width: 60%;
+    line-height: 2;
+    color: #393939;
+}
+
+.count .text h2 span {
+    color: #acacac;
+}
+
+.faq {
+    padding: 30px;
+}
+
+.faq .top {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.faq .top .title_small {
+    color: #777;
+    text-transform: uppercase;
+}
+
+.faq .bottom {
+    padding: 0 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faq .bottom .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq .bottom .question .icon {
+    height: 25px;
+    width: 25px;
+    border: #000 solid 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.faq .bottom hr {
+    width: 100%;
+    border: #777 solid 1px;
+}
+
+
+@media (max-width:950px) {
+    .hero_badge {
+        width: 50px;
+        height: 50px;
+        font-size: 10px;
+        top: 12%;
+    }
+
+    .about {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .left {
+        height: 315px;
+    }
+
+    .about .left img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about .right .title_main {
+        width: 100%;
+    }
+
+    .about .right .desc {
+        width: 100%;
+    }
+
+    .image_cards .card .card_title {
+        width: 70%;
+    }
+
+    .faq .bottom {
+        padding: 0 30px;
+    }
+
+    .faq .bottom .question .icon {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:700px) {
+    .nav .nav-links {
+        display: none;
+    }
+
+    .nav .btn-lang {
+        display: none;
+    }
+
+    .nav .menu {
+        display: block;
+    }
+
+    .hero {
+        margin-top: 10px;
+    }
+
+    .hero_text {
+        padding: 0 30px;
+    }
+
+    .hero_badge {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: unset;
+        gap: 10px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .featured_cards {
+        flex-direction: column;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .left {
+        width: 100%;
+    }
+
+    .about .left img {
+        width: 100%;
+    }
+
+    .about .right {
+        width: 100%;
+        margin-top: -4px;
+    }
+
+    .about .right .title_main {
+        width: 100%;
+    }
+
+    .about .right .desc {
+        width: 100%;
+    }
+
+    .explore .image_cards {
+        flex-direction: column;
+    }
+
+    .explore .card img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .explore .image_cards hr:not(:last-child) {
+        display: block;
+        width: 100%;
+    }
+
+    .explore .image_cards .card {
+        width: 100%;
+    }
+
+    .image_cards .card .card_title {
+        font-weight: 500;
+    }
+    
+    .image_cards .card .card_desc {
+        width: 100%;
+        color: #777;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .count {
+        margin: 0;
+    }
+
+    .count .text h2 {
+        width: 100%;
+    }
+
+    .faq .top {
+        margin-bottom: 20px;
+    }
+
+    .faq .bottom {
+        padding: 0 2px;
+    }
+
+    .faq .bottom .question {
+        gap: 10px;
+    }
+
+    .faq .bottom .question .icon {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        font-size: 10px;
+    }
+}
