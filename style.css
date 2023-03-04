@@ -176,7 +176,6 @@ body {
 .about {
     margin: 20px 0;
     display: flex;
-    /* align-items: center; */
 }
 
 .about .left {
@@ -370,6 +369,92 @@ body {
     border: #777 solid 1px;
 }
 
+.footer {
+    background: #131313;
+    color: #d7d7d7;
+    padding: 50px 30px 20px;
+}
+
+.footer-flex {
+    display: flex;
+    column-gap: 170px;
+}
+
+.footer h2,
+.footer h3 {
+    margin-bottom: 50px;
+}
+
+.footer li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer li:last-child {
+    margin-bottom: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #777;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer .news-letter {
+    position: relative;
+    width: 27%;
+}
+
+.footer .news-letter p{
+    text-transform: uppercase;
+}
+
+.footer .news-letter input {
+    border: none;
+    border-bottom: 1px solid #777;
+    background: transparent;
+    padding: 5px 2px;
+    color: #d7d7d7;
+    width: 100%;
+}
+
+.footer .news-letter i {
+    position: absolute;
+    left: 95%;
+    border: 1px solid #d7d7d7;
+    font-size: 7px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.footer .news-letter input:focus {
+    outline: none;
+}
+
+.social {
+    margin-top: 30px;
+}
+
+.social i {
+    background: #393939;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.copyright {
+    margin-top: 50px;
+    text-align: center;
+    color: #777;
+}
+
+.copyright hr {
+    border: .6px solid #777;
+}
+
 
 @media (max-width:950px) {
     .hero_badge {
@@ -411,6 +496,10 @@ body {
 
     .faq .bottom .question .icon {
         font-size: 12px;
+    }
+
+    .footer-flex {
+        flex-wrap: wrap;
     }
 }
 
@@ -532,5 +621,20 @@ body {
         height: 20px;
         padding: 10px;
         font-size: 10px;
+    }
+
+    .footer-flex {
+        flex-direction: column;
+    }
+
+    .footer .news-letter {
+        position: relative;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .footer h2,
+    .footer h3 {
+        margin-bottom: 10px;
     }
 }
