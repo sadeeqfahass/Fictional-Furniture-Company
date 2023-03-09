@@ -71,7 +71,7 @@ body {
 
 .nav-side {
     height: 99vh;
-    width: 90%;
+    width: 100%;
     background: linear-gradient(45deg, #272222, #515053);
     padding: 5rem 0;
     display: flex;
