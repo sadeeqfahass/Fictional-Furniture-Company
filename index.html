@@ -14,29 +14,54 @@
       src="https://kit.fontawesome.com/79a86fec59.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="shortcut icon" href="Images/image-removebg-preview (3).png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="Images/image-removebg-preview (3).png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Furniture</title>
   </head>
   <body>
-    <div class="nav">
+    <div class="nav" id="nav">
       <div class="logo">
         <h2>BeRaz</h2>
       </div>
       <div class="nav-links">
-        <li><a href="">Home</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">FAQ</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#nav">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
       </div>
       <div class="btn-lang">
         <button>Get Started</button>
         <p>English <i class="fa-solid fa-chevron-down"></i></p>
       </div>
-      <div class="menu">
-        <i class="fa-sharp fa-solid fa-bars"></i>
+      <div class="menu" id="menu-icon">
+        <input type="checkbox" name="" id="check-box" />
+        <div class="lines">
+          <div class="top"></div>
+          <div class="middle"></div>
+          <div class="bottom"></div>
+        </div>
       </div>
     </div>
+
+    <div class="nav-side" id="menu">
+      <div class="items">
+        <ul>
+          <li><a href="#nav">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="btn-con">
+        <button>Get Started</button>
+        <p>English <i class="fa-solid fa-chevron-down"></i></p>
+      </div>
+      
+  </div>
 
     <div class="hero">
       <div class="hero_text">
@@ -101,7 +126,7 @@
       </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
       <div class="left">
         <img src="Images/francesca-tosolini-lLDh9JppH2c-unsplash.jpg" alt="" />
       </div>
@@ -182,7 +207,7 @@
       </div>
     </div>
 
-    <div class="faq">
+    <div class="faq" id="faq">
       <div class="top">
         <p class="title_small">faq</p>
         <h2 class="main">Frequently Asked Questions</h2>
@@ -212,13 +237,13 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="contact">
       <div class="footer-flex">
         <div class="news-letter">
           <h2>BeRaz</h2>
           <p>Join our newsletter</p>
           <div class="input">
-            <input type="text" placeholder="Email Address"/>
+            <input type="text" placeholder="Email Address" />
             <i class="fa-sharp fa-solid fa-chevron-right"></i>
           </div>
         </div>
@@ -246,9 +271,11 @@
         <i class="fa-brands fa-linkedin-in"></i>
       </div>
       <div class="copyright">
-        <hr>
+        <hr />
         <p>2023 &copy; All rights reserved</p>
       </div>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>

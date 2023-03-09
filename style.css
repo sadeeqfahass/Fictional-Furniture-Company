@@ -1,10 +1,133 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
 }
 
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+
+.menu {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: relative;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .lines {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.menu .lines div {
+    width: 30px;
+    height: 4px;
+    border-radius: 10px;
+    background: #000;
+    pointer-events: none;
+    transition: all .5s;
+    margin-bottom: 7px;
+}
+
+.menu .lines div:last-child {
+    margin: 0;
+}
+
+.menu input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 200;
+}
+
+.menu input:checked ~ .lines .middle{
+    display: none;
+    margin-bottom: 0;
+}
+
+.menu input:checked ~ .lines .top{
+    transform: rotate(135deg) translateY(-2px);
+    margin-bottom: 0;
+}
+
+.menu input:checked ~ .lines .bottom{
+    transform: rotate(-135deg) translateY(2px);
+}
+
+.nav-side {
+    height: 99vh;
+    width: 90%;
+    background: linear-gradient(45deg, #272222, #515053);
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    transition: all .5s;
+    padding: auto;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+}
+
+.nav-show {
+    transform: translateX(0);
+
+}
+
+.nav-side .items ul {
+    padding: 0;
+    text-align: center;
+}
+
+.nav-side .items ul li{
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.nav-side .items ul li a {
+    text-decoration: none;
+    color: #131313;
+    font-size: 2rem;
+}
+
+.nav-side .items ul li a:hover {
+    color: #9c9c9c;
+}
+
+.btn-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-con button {
+    background: #000;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: transform .5s;
+}
+
+.btn-con button:hover {
+    transform: scale(1.1);
 }
 
 .nav {
