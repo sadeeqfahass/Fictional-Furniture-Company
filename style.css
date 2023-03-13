@@ -40,7 +40,7 @@ body {
     border-radius: 10px;
     background: #000;
     pointer-events: none;
-    transition: all .5s;
+    transition: all .1s;
     margin-bottom: 7px;
 }
 
@@ -61,23 +61,22 @@ body {
 }
 
 .menu input:checked ~ .lines .top{
-    transform: rotate(135deg) translateY(-2px);
+    transform: rotate(-135deg) translateY(-2px);
     margin-bottom: 0;
 }
 
 .menu input:checked ~ .lines .bottom{
-    transform: rotate(-135deg) translateY(2px);
+    transform: rotate(135deg) translateY(2px);
 }
 
 .nav-side {
-    height: 99vh;
-    width: 100%;
-    background: linear-gradient(45deg, #272222, #515053);
-    padding: 5rem 0;
+    height: 100%;
+    width: 80%;
+    background: rgba(210, 210, 210, .97);
+    padding: 3rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     z-index: 200;
     transition: all .5s;
     padding: auto;
@@ -116,6 +115,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
 }
 
 .btn-con button {
@@ -131,7 +131,7 @@ body {
 }
 
 .nav {
-    padding: 10px 35px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
