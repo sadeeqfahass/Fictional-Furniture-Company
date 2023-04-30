@@ -79,10 +79,10 @@ body {
     justify-content: center;
     z-index: 200;
     transition: all .5s;
-    padding: auto;
     position: absolute;
     top: 0;
     transform: translateX(-100%);
+    display: none;
 }
 
 .nav-show {
@@ -759,5 +759,9 @@ body {
     .footer h2,
     .footer h3 {
         margin-bottom: 10px;
+    }
+
+    .nav-side {
+        display: block;
     }
 }

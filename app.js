@@ -10,4 +10,4 @@ menuIcon.addEventListener("click", () => {
 document.addEventListener("scroll", () => {
     menu.classList.remove("nav-show")
     checkBox.checked = false
-})``
+})
