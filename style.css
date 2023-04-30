@@ -474,6 +474,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .faq .bottom .question .icon {
@@ -485,6 +486,14 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.faq .bottom .item .answer{
+    display: none;
+}
+
+.faq .bottom .item .active  {
+    display: block;
 }
 
 .faq .bottom hr {
@@ -617,7 +626,7 @@ body {
         padding: 0 30px;
     }
 
-    .faq .bottom .question .icon {
+    .faq .bottom .item .question .icon {
         font-size: 12px;
     }
 
